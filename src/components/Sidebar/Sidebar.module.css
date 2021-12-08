@@ -1,0 +1,57 @@
+.nav {
+    gred-area: n;
+
+    background: green;
+    padding: 15px;
+}
+
+.item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 5px;
+
+    display: block;
+}
+
+.item:last-child {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.item.activeLink {
+    color: #3600c9;
+}
+
+.friends {
+    margin-top: 40px;
+}
+
+.friendsTitle {
+    font-size: 25px;
+    color: #fff;
+}
+
+.friendsMain {
+    display: flex;
+}
+
+.friendsItem {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friendsRound {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.friendsText {
+    margin-top: 8px;
+    font-size: 20px;
+    color: #fff;
+}

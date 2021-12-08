@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.followBtn {
+    background: green;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.followBtn:disabled {
+    background: #333333;
+    pointer-events:none;
+}
+
+.userItem {
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 20px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 500px;
+}
+
+.userItem:last-child {
+    margin-bottom: 0;
+}
+
+.usersPage {
+    padding: 20px;
+}

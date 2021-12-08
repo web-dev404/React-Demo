@@ -1,0 +1,58 @@
+.dialogs {
+    display: flex;
+    height: 100%;
+}
+
+.dialogItems {
+    background: blue;
+    padding: 10px 30px;
+    margin-right: 50px;
+    color: #fff;
+}
+
+.dialog {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.dialog a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.messages {
+    background: orange;
+    padding: 10px 30px;
+    margin-right: 50px;
+    color: #fff;
+    width: 300px;
+}
+
+.avatar {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.myMessage {
+    text-align: right;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.message p {
+    margin: 5px 0;
+}
+
+.textarea {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,13 @@
+.content__img {
+    width: 100%;
+    height: 250px;
+}
+
+.content__user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statusText {
+    user-select: none;
+}
