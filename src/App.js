@@ -1,7 +1,7 @@
 import './App.scss';
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
-import News from "./components/News/News";
-import Music from "./components/Music/Music";
+// import News from "./components/News/News";
+// import Music from "./components/Music/Music";
 import {BrowserRouter, Route} from "react-router-dom";
 import React, {Suspense} from "react";
 import SidebarContainer from "./components/Sidebar/SidebarContainer";
@@ -13,7 +13,7 @@ import {initializeApp} from "./redux/app-reducer";
 import Loader from "./components/common/loader/Loader";
 import store from "./redux/redux-store";
 
-const Settings = React.lazy(() => import('./components/Settings/Settings'));
+// const Settings = React.lazy(() => import('./components/Settings/Settings'));
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
 class App extends React.Component {
@@ -38,19 +38,19 @@ class App extends React.Component {
                             <ProfileContainer />
                         </Route>
 
-                        <Route path="/settings">
-                            <Settings />
-                        </Route>
+                        {/*<Route path="/settings">*/}
+                        {/*    <Settings />*/}
+                        {/*</Route>*/}
                     </Suspense>
                     <Route path="/dialogs">
                         <DialogsContainer/>
                     </Route>
-                    <Route path="/news">
-                        <News/>
-                    </Route>
-                    <Route path="/music">
-                        <Music/>
-                    </Route>
+                    {/*<Route path="/news">*/}
+                    {/*    <News/>*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/music">*/}
+                    {/*    <Music/>*/}
+                    {/*</Route>*/}
                     <Route path="/users">
                         <UsersContainer/>
                     </Route>
