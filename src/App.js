@@ -2,7 +2,7 @@ import './App.scss';
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 // import News from "./components/News/News";
 // import Music from "./components/Music/Music";
-import {BrowserRouter, Route} from "react-router-dom";
+import {HashRouter, Route} from "react-router-dom";
 import React, {Suspense} from "react";
 import SidebarContainer from "./components/Sidebar/SidebarContainer";
 import UsersContainer from "./components/Users/UsersContainer";
@@ -72,13 +72,13 @@ const mapStateToProps = (state) => {
 const AppContainer = connect(mapStateToProps, {initializeApp})(App);
 
 const SamuraiJSApp = (props) => {
-    return (<BrowserRouter>
+    return (<HashRouter>
             <React.StrictMode>
                 <Provider store={store}>
                     <AppContainer/>
                 </Provider>
             </React.StrictMode>,
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
